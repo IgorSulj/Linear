@@ -6,6 +6,9 @@ _lines_style = {'linestyle': '--', 'color': 'black'}
 
 
 def draw_lines_to_point(ax: Axes, x_end, y_end):
+    '''
+    Строим перпендикуляры к точке, заданной x_end и y_end
+    '''
     x_start = ax.get_xlim()[0]
     y_start = ax.get_ylim()[0]
     line_from_x = Line2D([x_end, x_end], [y_start, y_end], **_lines_style)
