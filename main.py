@@ -10,7 +10,7 @@ fig, ax = plt.subplots()
 
 ax.plot(x, y, marker='o', label='Исходные данные')
 
-long_x = np.append(x, [3])
+long_x = np.append(x, [3.05])
 ax.plot(long_x, a*long_x + b,
         label=f'Приближённая линейная зависимость\n'
               f'(y$\\approx${a:.2f}x+{b:.2f})')
